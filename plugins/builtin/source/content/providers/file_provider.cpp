@@ -24,6 +24,8 @@
 
 #if defined(OS_WINDOWS)
     #include <windows.h>
+#elif defined(OS_FREEBSD)
+    #include <sys/extattr.h>
 #elif defined(OS_MACOS) || defined(OS_LINUX)
     #include <sys/xattr.h>
 #endif
